@@ -12,7 +12,7 @@ let globalName = 'seungjong'; //Globol scope
 console.log(name); //console에 출력 안됌
 console.log(globalName); //console에 출력 됌
 
-//2. Contants
+//2. Contants 한 번 할당된 값이 바뀌면 안됌
 const name2 = 'babo';
 console.log(name2);
 const day = 7;
@@ -24,7 +24,7 @@ console.log(max);
 //3-1. Primitive 타입(single item) - number, string, boolean, null, undefined, symbol
 //3-2. Object 타입 - box container
 
-//3-1. number
+//3-1-1. number
 const a = 17;
 console.log(`value: ${a}, type: ${typeof a}`);
 const b = 1.7;
@@ -72,7 +72,7 @@ jisun.name = 'seungjong';
 jisun.age = 26;
 console.log(jisun);
 
-//4. Dynamic typing
+//4. Dynamic typing(오류가 많이나서 TypeScript가 나옴)
 let text = 'hello';
 console.log(text.charAt(0)); //index언어는 0부터 시작
 console.log(`value: ${text}, type: ${typeof text}`);
