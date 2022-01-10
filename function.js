@@ -132,16 +132,38 @@ simplePrint();
 //    return a + b;
 //};
 const add = (a, b) => a + b; //위 코드랑 똑같음
-add(1, 2);
-console.log(`add: ${1,2}`); //이상하게 출력 됌
+console.log(`add: ${add(5,6)}`);
+console.log(add(4,6));
 
 const simpleMultiply = (a, b) => {
     return a * b;
 }; //블럭을 쓰게되면 return이란 키워드 이용해서 값을 return해야함
-simpleMultiply(3, 4);
-console.log(`simpleMultiply: ${3,4}`); //이상하게 출력 됌
+console.log(`simpleMultiply: ${simpleMultiply(3,4)}`);
+console.log(simpleMultiply(3,6));
 
 //2-3. IIFE(Immediately Invoked Function Expression)
 (function hello() {
     console.log('IIFE');
 })(); //hello라고 함수 호출한거랑 같은 효과, 따로 hello라고 함수 호출 안해도 됌
+
+//Quiz time
+//function calculate(command, a, b)
+//command : add, substract, divide, multiply, remainder
+function calculate(command, a, b) {
+    switch(command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        defailt:
+            throw Error('unknown command'); //왜 쓰는지 이해 안감
+    }
+}
+console.log(`calculate: ${calculate('add', 3, 4)}`);
+console.log(calculate('multiply', 4, 7));
