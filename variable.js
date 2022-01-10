@@ -15,7 +15,7 @@ let globalName = 'seungjong'; //Globol scope(파일안에 바로 정의, 최소�
 console.log(name); //console에 출력 안됌(블럭 밖에 있으니까)
 console.log(globalName); //console에 출력 됌(어느 곳 에나 접근 가능)
 
-//2. Contants(한 번 할당된 값이 바뀌면 안됌, Immutable데이터 타입이라고 불림)
+//2. Contant(한 번 할당된 값이 바뀌면 안됌, Immutable데이터 타입이라고 불림)
 //2-1. 많은 개발자들이 왠만하면 값을 할당한 다음에 다시는 변경되지 않는걸 선호
 //(WHY?)보안상의 이유
 //(WHY?)다양한 thread들이 동시에 변수에 접근해서 값을 변경하는 것은 위험
@@ -29,7 +29,7 @@ console.log(max);
 
 //3. Variable types(자바스크립트 데이터 타입)
 //3-1. Primitive 타입(single item) - number, string, boolean, null, undefined, symbol
-//3-2. Object 타입 - box container
+//3-2. Object 타입(reference가 생김) - box container
 
 //3-1-1. number
 //자바스크립트에서는 number데이터 타입 선언을 하지 않고 다른 변수로 선언해도 됌
