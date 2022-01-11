@@ -1,3 +1,5 @@
+'use strict';
+
 //Function(함수)
 //function은 program을 구성하는 기본적인 building block
 //subprogram이라고도 불리며 여러번 재사용이 가능
@@ -162,7 +164,7 @@ function calculate(command, a, b) {
         case 'remainder':
             return a % b;
         defailt:
-            throw Error('unknown command'); //왜 쓰는지 이해 안감
+            throw Error('unknown command');
     }
 }
 console.log(`calculate: ${calculate('add', 3, 4)}`);
