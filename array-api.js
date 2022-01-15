@@ -132,6 +132,14 @@ console.log(result14);
 //
 const result15 = students
 .map((student) => student.score)
-.filter(score => score >= 50)
+.filter((score) => score >= 50)
 .join();
 console.log(result15);
+
+
+//Bonus! do Q10 sorted in ascending order result should be: '45, 66, 80, 88, 90'
+const result16 = students
+.map((student) => student.score)
+.sort((a, b) => a - b)
+.join();
+console.log(result16);
