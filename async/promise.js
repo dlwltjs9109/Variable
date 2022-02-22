@@ -52,16 +52,16 @@ fetchNumber
 //4. Error Handing
 const getHen = () =>
     new Promise((resolve, reject) => {
-        setTimeout(() => resolve('♥'), 1000);
-    }); //1초 있다 하트를 return함
+        setTimeout(() => resolve('🐔'), 1000);
+    }); //1초 있다 닭을 return함
 const getEgg = hen =>
     new Promise((resolve, reject) => {
-        setTimeout(() => reject(new Error(`error! ${hen} => ●`)), 1000);
-    }); //하트를 받아와서 원형 return
+        setTimeout(() => reject(new Error(`error! ${hen} => 🥚`)), 1000);
+    }); //닭을 받아와서 계란 return
 const cook = egg =>
     new Promise((resolve, reject) => {
-        setTimeout(() => resolve(`${egg} => ★`), 1000);
-    }); //원형을 받아와서 별 return
+        setTimeout(() => resolve(`${egg} => 🥟`), 1000);
+    }); //계란을 받아와서 후라이 return
 
     //getHen() 밑에처럼 간편히 쓸 수 있음
     //.then(hen => getEgg(hen))
